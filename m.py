@@ -7,10 +7,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('6985771977:AAHs45lBA9nZ93YsOjhr0LPxjsb6UMctdsg')
+bot = telebot.TeleBot('6889890787:AAEvZrLmVOhLLOF4NAQQsdzbm4NB06FI81s')
 
 # Admin user IDs
-admin_id = ["6159360725"]
+admin_id = ["1413288510"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -207,7 +207,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy @BackupRedirect"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃🔥🔥.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy @BackupRedirect"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -247,7 +247,7 @@ def handle_bgmi(message):
         else:
             response = "Usage :- /bgmi <target> <port> <time>\nBy @BackupRedirect"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy @BackupRedirect"
+        response = "You Are Not Authorized To Use This Command.\nBy @ZEROX🔥"
 
     bot.reply_to(message, response)
 
@@ -284,7 +284,7 @@ def show_help(message):
 
  To See Admin Commands:
  /admincmd : Shows All Admin Commands.
- By @BackupRedirect
+ By @ZEROX🔥
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -327,7 +327,7 @@ Pr-ice List:
 Day-->150 Rs
 Week-->900 Rs
 Month-->1600 Rs
-To Buy Any Plan Dm @Contact2ProBot
+To Buy Any Plan Dm @ZEROX🔥
 '''
     bot.reply_to(message, response)
 
